@@ -1,0 +1,448 @@
+/* //////////// */
+/* STYLE GLOBAL */
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+.body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+/* SAUT DE LIGNE */
+.yolo {
+    height: 5vh;
+}
+/* .custom-line {
+    min-height: 5rem;
+    margin-bottom: 1rem;
+}
+
+.custom-line .col {
+    background-color: midnightblue;
+    color: white;
+} */
+
+.sectionHead {
+    text-align: center;
+}
+
+.sectionHead h3 {
+    color: goldenrod;
+    font-size: 1.2rem;
+}
+.sectionHead h2 {
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.niceButton {
+    padding: 15px 30px;
+    border: 1px white solid;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+.niceButton:hover {
+    color: goldenrod;
+    border-color: goldenrod;
+    text-decoration: none;
+    background-color: white;
+}
+
+
+/* ////////////// */
+/* SECTION HEADER */
+header {
+    position: relative;
+    height: 80vh;
+    width: 100vw;
+    background-image: url(../img/header-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.overlay {
+    background-color: rgba(73, 50, 177, 0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.navbar1 {
+    width: 100%;
+}
+.navbar-brand {
+    width: 30%;
+}
+    /* NAV BAR 1 */
+    .navbar1 ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        list-style: none;
+        justify-content: space-between;
+    }
+    .navbar1 a {
+        color: whitesmoke;
+        text-transform: uppercase;
+    }
+
+    /* NAV BAR 2 */
+    .navbar2 {
+        width: 100%;
+        z-index: 50;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 1%;
+        display: none;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(0, 0, 60, 1);
+    }
+    .navbar2 button {
+        color: white;
+        background-color: transparent;
+        border: none;
+        font-size: 2rem;
+    }
+
+
+    @media screen and (max-width: 600px) {
+        .navbar2 {
+            display: flex;
+            
+        }
+        .navbar1 {
+            display: none;
+        }
+    }
+
+    /* TITRE */
+    .headerHead {
+        position: relative;
+        height: 100%;
+    }
+    h1 {
+        color: whitesmoke;
+        font-size: 7rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 0;
+        line-height: 6rem;
+        padding-bottom: 10%;
+    }
+    .headerHead p {
+        padding-top: 15%;
+        color: whitesmoke;
+        font-size: 1.5rem;
+        margin-bottom: 0;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    /* RESEAUX */
+    .headerNetwork {
+        width: 80%;
+        position: absolute;
+        bottom: 0%;
+        padding-bottom: 1%;
+    }
+    .headerNetwork a {
+        color: white;
+        font-size: 1.5rem;
+        padding: 15px;
+    }
+    /* TEXT VERTICAL */
+    .headerSub {
+        position: absolute;
+        transform: rotate(-90deg);
+        opacity: .25;
+        top: 20%;
+        left: 10%;
+    }
+    .headerSub h2 {
+        color: lightgray;
+        font-size: 8rem;
+        font-weight: 700;
+    }
+
+
+    /* MEDIA QUERIES HEADER */
+    @media screen and (max-width:1000px) {
+        h1 {
+            font-size: 2rem;
+            line-height: 2rem;
+        }
+        .headerHead p {
+            font-size: 1rem;
+        }
+        .headerNetwork {
+            position: absolute;
+            bottom: 0%;
+        }
+        .headerSub {
+            display: none;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        header {
+            height: 60vh;
+        }
+        .headerHead {
+            text-align: center;
+            padding-top: 20%;
+        }
+    }
+
+
+/* //////////////// */
+/* SECTION SERVICES */
+.services {
+    background-color: white;
+}
+
+.service {
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.serviceImg {
+    border: black 1px solid;
+    text-align: center;
+    width: 80%;
+    margin: 3%;
+    padding: 10%;
+}
+.service i {
+    width: 100%;
+}
+
+@media screen and (max-width:600px) {
+    .serviceImg {
+        width: 60%;
+    }
+}
+
+/* ///////////////// */
+/* SECTION ABOUT US */
+.aboutUs {
+    background-color: whitesmoke;
+}
+.usDescription p {
+    text-align: left;
+    width: 100%;
+}
+.aboutUs .sectionHead {
+    text-align: left;
+}
+.aboutUs .niceButton {
+    color: black;
+    border-color: orange
+}
+
+    /* MEDIA QUERIES */
+    @media screen and (max-width:600px) {
+        .aboutUs {
+            text-align: center;
+        }
+    }
+
+
+/* //////////////////// */
+/* SECTION RECENT WORK */
+
+    /* MENU */
+    .recentWork ul {
+        list-style: none;
+    }
+    .recentWork ul li {
+        padding: 3%;
+    }
+    .recentWork ul a {
+        color: black;
+        text-transform: uppercase;
+    }
+
+    /* CARTES */
+    .card {
+        position: relative;
+        margin-bottom: 3%;
+    }
+    /* FINES */
+    .cardNarrow {
+        border-radius: 0 0 15px 15px;
+    }
+    /* LARGES */
+    .cardWide {
+        border-radius: 15px 0 15px 15px;
+    }
+
+    .card-img {
+        border-radius: 15px;
+    }
+    .card-overlay {
+        background-color: white;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 3% 5%;
+    }
+    .cardNarrow .card-overlay {
+        width: 100%;
+    }
+    .cardWide .card-overlay {
+        width: 50%;
+    }
+
+    /* MEDIA QUERIES */
+
+    @media screen and (max-width: 400px) {
+        .card .card-overlay {
+            width: 85%;
+        }
+    }
+
+
+    @media screen and (max-width: 768px) {
+        .building:nth-of-type(2) {
+            width: 20px;
+        }
+
+    }
+
+
+/* ///////////// */
+/* SECTION VIDEO */
+
+.video {
+    width: 100%;
+    margin-top: 10vh;
+    background-image: url(../img/ct1.jpg);
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.video .overlay {
+    height: 100%;
+    width: 100%;
+}
+.video a{
+    color: orange;
+}
+
+.videoHead {
+    padding-top: 11%;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+.videoHead h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+
+
+
+
+/* //////////////////// */
+/* SECTION TESTIMONIALS */
+.testimonials {
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 10% 0;
+}
+.testimonials .sectionHead {
+    padding-bottom: 5%;
+} 
+    /* BOUTONS */
+    .sliderBtn {
+        background-color: rgba(200, 200, 200, 1);
+        height: 5px;
+        width: 25px;
+        border-radius: 10px;
+        margin: 0 5px;
+    }
+    .sliderBtn:hover {
+        background-color: goldenrod;
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    /* CLIENT BOX */
+    .client {
+        background-color: white;
+        margin: 1% 0;
+    }
+
+    /* MEDIA QUERIES */
+    @media screen and (max-width:400px) {
+        .client2 {
+            display:none;
+        }
+        .client {
+           width: 100%;
+        }
+    }
+
+/* ////////////// */
+/* SECTION LABELS */
+
+@media screen and (max-width:768px) {
+    .labels {
+        width: 100%;
+    }
+    }
+
+
+/* ////////////// */
+/* SECTION FOOTER */
+footer {
+    padding-top: 5%;
+    background-color: rgba(0, 0, 60, 1);
+}
+footer p {
+    color: lightgray;
+
+}
+
+footer h5 {
+    color: white;
+}
+footer li {
+    list-style: none;
+    margin-left: -40px;
+}
+footer li a{
+    color: lightgray;
+}
+    /* NEWSLETTER */
+    footer input[type="email"] {
+        background-color: darkcyan;
+        padding: 10px;
+        color: white;
+    }
+
+    footer input[type="submit"] {
+        font-weight: 700;
+        color: darkcyan;
+    }
+
+    /* NETWORK */
+    .footer-network a {
+        background-color: slategrey;
+        color: whitesmoke;
+        padding: 10px;
+    }
+    .footer-network a:first-child {
+        padding: 10px 14px;
+    }
+
